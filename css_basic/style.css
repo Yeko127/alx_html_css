@@ -10,9 +10,16 @@ main {
 article {
     flex: 2;
     overflow-y: auto;
+    background-color: lightslategrey;
 }
 aside {
     flex: 1;
     overflow-y: auto;
 }
-
+.logo {
+    font-size: 32px;
+    color: black;
+    padding: 8x 14px;
+    border-radius: 50%;
+    font-weight: bold;
+}
