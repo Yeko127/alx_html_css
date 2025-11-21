@@ -1,6 +1,10 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: lightgrey;
+}
+header {
+    background-color: rgba(38, 46, 56, 0.473);
 }
 main {
     display: flex;
@@ -15,6 +19,7 @@ article {
 aside {
     flex: 1;
     overflow-y: auto;
+    background-color: rgba(67, 81, 99, 0.473);
 }
 .logo {
     font-size: 32px;
@@ -23,3 +28,4 @@ aside {
     border-radius: 50%;
     font-weight: bold;
 }
+
