@@ -181,20 +181,18 @@ header nav ul li a {
     color: 071629 C271FF 071629;
     margin-bottom: 30px;
 }
-
+.smiles img {
+    margin: 10px;
+    width: 150px;
 }
-.smiles-item {
+.smiles1 .smiles2 .smiles3 .smiles4 {
     width: 250%;
-    height: 450px;
-    padding: 15px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     display: inline-block;
+    margin: 10px;
 }
-.smiles-item {
-    width: 100%;
-    border-radius: 10px;
-}
+
 .smiles h3 {
     color: 071629;
 }
