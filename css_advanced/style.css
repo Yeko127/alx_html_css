@@ -172,9 +172,9 @@ header nav ul li a {
     padding: 40px;
     text-align: center;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 20px;
+    color: white;
 }
 
 .smiles h2 {
@@ -182,12 +182,14 @@ header nav ul li a {
     margin-bottom: 30px;
 }
 
+}
 .smiles-item {
     width: 250%;
     height: 450px;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
+    display: inline-block;
 }
 .smiles-item {
     width: 100%;
