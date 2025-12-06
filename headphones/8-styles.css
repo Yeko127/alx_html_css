@@ -1,0 +1,162 @@
+/* GENERAL STYLES */
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.hero {
+    background-image: url("Images/headphones_hero_1.jpg");
+    background-size: cover;
+    height: 600px;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.what-we-do {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.what-we-do .items {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.what-we-do .item {
+    width: 200px;
+    padding: 20px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Hover effect */
+.what-we-do .item:hover {
+    transform: translateY(-10px) scale(1.05);
+    opacity: 1;
+}
+
+/* Floating keyframes */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+.our-results {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f3f3f3;
+}
+
+.our-results .items {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.our-results .item {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+    animation: bounceScale 3s ease infinite;
+    transition: transform 0.4s ease;
+}
+
+/* Hover effect */
+.our-results .item:hover {
+    transform: scale(1.15) rotate(5deg);
+}
+
+/* Bouncing & scaling animation */
+@keyframes bounceScale {
+    0% { transform: scale(1) translateY(0); }
+    30% { transform: scale(1.15) translateY(-10px); }
+    50% { transform: scale(1) translateY(0); }
+    80% { transform: scale(1.1) translateY(-5px); }
+    100% { transform: scale(1) translateY(0); }
+}
+
+
+.pentagon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 40px 0 40px;
+    border-color: #FF6565 transparent transparent transparent;
+    position: relative;
+    margin: 0 auto;
+}
+
+.pentagon:after {
+    content: "";
+    position: absolute;
+    top: -95px;
+    left: -40px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 35px 60px 60px 60px;
+    border-color: transparent transparent #FF6565 transparent;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+    color: white;
+    margin-top: 60px;
+}
